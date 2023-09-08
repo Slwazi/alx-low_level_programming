@@ -12,20 +12,12 @@
 
 int main(void)
 {
-	char lowercase = 'a';
-	char uppercase = 'A';
+	char alphabet;
 
-	while (lowercase <= 'z')
+	for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
 	{
-		putchar(lowercase);
-		putchar(' ');
-		putchar(uppercase);
-
-		lowercase++;
-		uppercase++;
+		putchar(alphabet);
 	}
-
 	putchar('\n');
 	return (0);
 }
-
