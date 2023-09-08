@@ -6,32 +6,29 @@
  * main - Entry point of the program
  *
  * Description: This function initializes a random number and prints whether
- *              it's positive, zero, or negative.
+ *			  it's positive, zero, or negative.
  *
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
+
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 	printf(" %d is ", n);
-
-    
-	if (n > 0) {
-        printf("positive\n");
-   
-       	} else if (n == 0) {
-        printf("zero\n");
-    
-	} else {
-        printf("negative\n");
-    
+	if (n > 0)
+	   	{
+		printf("positive\n");
+	   	} else if (n == 0)
+	   	{
+		printf("zero\n");
+	} else
+	   	{
+		printf("negative\n");
 	}
-
-    
 	return (0);
 }
 
