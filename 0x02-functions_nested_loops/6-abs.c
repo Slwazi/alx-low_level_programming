@@ -1,24 +1,16 @@
 #include "main.h"
 
 /**
- * _abs - man abs  the sign of a number
+ * _abs - computes the absolute value of an integer
  * @n: the int to check
- * Return: 1 and prints + if n is greater than zero
- * 0 and prints 0 if n is zero
- * -1 and prints - if n is less than zero
+ * Return: the  value of int
  */
-int print_sign(int n)
+int _abs(int n)
 {
-	if (n > 0)
+	if (n >= 0)
 	{
-		_putchar('+');
-		return (1);
-    } else if (n == 0)
-	 {
-	 	_putchar('0');
-		return (0);
-    } else {
-	 	_putchar('-');
-		return (-1);
-    }
+		return (n);
+	}
+	return (-n);
 }
+
