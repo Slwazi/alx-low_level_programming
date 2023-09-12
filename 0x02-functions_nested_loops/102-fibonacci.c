@@ -8,24 +8,24 @@
  */
 int main(void)
 {
-	long int ii, jj, kk, next;
+	long int i, j, k, next;
 
-	jj = 1;
+	j = 1;
 
-	kk = 2;
+	k = 2;
 
-	for (i1 = 1; i1 <= 50; ++i1)
+	for (i = 1; i <= 50; ++i)
 	{
-		if (jj != 20365011074)
+		if (j != 20365011074)
 		{
-			printf("%ld, ", jj);
+			printf("%ld, ", j);
 		} else
 		{
-			printf("%ld\n", jj);
+			printf("%ld\n", j);
 		}
-		next = jj + kk;
-		jj = kk;
-		kk = next;
+		next = j + k;
+		j = k;
+		k = next;
 	}
 
 	return (0);
