@@ -3,7 +3,8 @@
 /**
  * main - Entry point of the program
  *
- * Description: This function initializes a random number and prints whether
+ * Description: Write a function that prints the alphabet, in l
+ * owercase, followed by a new line.
  * it's greater than 5, and is 0, or less than 6 and not 0.
  *
  * Return: Always 0 (success)
