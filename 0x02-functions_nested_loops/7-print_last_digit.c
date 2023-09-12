@@ -1,26 +1,23 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
- * this is being followed by a new line
+ * print_last_digit - prints the last digit of a number
+ * @n: the int to extrgetact the last digit from
+ * Return: value of the last digit
  */
-
-void print_alphabet_x10(void)
+int print_last_digit(int n)
 {
-	char ch;
-	int i;
+	int a;
 
-	i = 0;
+	if (n < 0)
+		n = -n;
 
-	while (i < 10)
-	{
-		ch = 'a';
-		while (ch <= 'z')
-		{
-			_putchar(ch);
-			ch++;
-		}
-		_putchar('\n');
-		i++;
-	}
+	a = n % 10;
+
+	if (a < 0)
+		a = -a;
+
+	_putchar(a + '0');
+
+	return (a);
 }
