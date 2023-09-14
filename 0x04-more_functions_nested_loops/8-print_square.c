@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
-  * print_diagonal - Prints n squares according n number of times
+  * print_square - Prints n squares according n number of times
   * @size: The number of squares/number of times
   *
   * Return: empty
   */
-
-void print_diagonal(int size)
+void print_square(int size)
 {
-
+	int x, y;
 
 	if (size <= 0)
 	{
@@ -17,16 +16,14 @@ void print_diagonal(int size)
 	}
 	else
 	{
-		int i, j;
-
-		for (i = 0; i < size; i++)
+		for (x = 0; x < size; x++)
 		{
-			for (j = 0; j < size; j++)
+			for (y = 0; y < size; y++)
 			{
-				_putchar('#');
+				_putchar(35);
 			}
-			_putchar('\n');
 
+			_putchar('\n');
 		}
 	}
 }
