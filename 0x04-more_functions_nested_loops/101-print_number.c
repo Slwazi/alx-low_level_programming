@@ -21,7 +21,7 @@ void print_number(int n)
 	v /= 10;
 
 	if (v != 0)
-		print_number(k);
+		print_number(v);
 
 	_putchar((unsigned int) n % 10 + '0');
 }
