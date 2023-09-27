@@ -9,7 +9,7 @@
  *
  * Return: 1 if prime, 0 otherwise
  */
-int prime_finder(int xx, int yy)
+int prime_number(int xx, int yy)
 {
 	if (xx == yy)
 		return (1);
